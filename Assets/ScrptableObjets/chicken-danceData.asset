@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: chicken-dance
   animationName: Dance
-  notesConfig: {fileID: 0}
+  notesConfig: {fileID: 4900000, guid: 8a313f8ce490625458dae9c5335c8bec, type: 3}
+  speed: 20

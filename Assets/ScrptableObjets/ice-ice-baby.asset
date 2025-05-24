@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: ice-ice-baby
   animationName: HipHop
-  notesConfig: {fileID: 0}
+  notesConfig: {fileID: 4900000, guid: bfa3ef93006d4214ca728089794b6a89, type: 3}
+  speed: 20
