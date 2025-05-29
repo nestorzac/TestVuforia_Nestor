@@ -15,4 +15,4 @@ MonoBehaviour:
   musicName: stadium-rave
   animationName: Medusa
   notesConfig: {fileID: 4900000, guid: bf6f9081c68d43d418e4310517082d7a, type: 3}
-  speed: 20
+  speed: 100
