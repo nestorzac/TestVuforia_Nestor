@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7251a74997d116c49aa0c86f913f2e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterAnimator: {fileID: 0}
+  _characterAnimator: {fileID: 1578510865}
   _notesManager: {fileID: 1901980105}
   _onSelecteDance:
     m_PersistentCalls:
