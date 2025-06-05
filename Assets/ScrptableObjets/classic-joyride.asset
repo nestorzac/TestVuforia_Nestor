@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86407210c3aa66f4383043f6a9af731c, type: 3}
-  m_Name: chicken-danceData
+  m_Name: classic-joyride
   m_EditorClassIdentifier: 
-  musicName: chicken-dance
-  animationName: Dance
-  notesConfig: {fileID: 4900000, guid: 8a313f8ce490625458dae9c5335c8bec, type: 3}
+  musicName: classic-joryride
+  animationName: Jet_Dance
+  notesConfig: {fileID: 4900000, guid: 1e1e7179ab6cd40418ea7e3ece2d7765, type: 3}
   speed: 200

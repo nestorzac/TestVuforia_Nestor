@@ -2,13 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NotesCheker : MonoBehaviour
+public class NotesChecker : MonoBehaviour
 {
     [SerializeField]
     private UnityEvent onButtonPressed;
-
     [SerializeField]
-    private UnityEvent onCorrecNote;
+    private UnityEvent onCorrectNote;
     [SerializeField]
     private UnityEvent onFailNote;
     private List<GameObject> notes = new List<GameObject>();
@@ -28,29 +27,30 @@ public class NotesCheker : MonoBehaviour
     }
     public void DestroyNotes()
     {
-         if (notes.Count > 0)
+        onButtonPressed?.Invoke();
+        GameObject noteToDestroy = null;
+        int indexToRemove = -1;
+        for (int i = 0; i < notes.Count; i++)
         {
-            onCorrecNote?.Invoke();
+            if (notes[i] != null)
+            {
+                noteToDestroy = notes[i];
+                indexToRemove = i;
+                break;
+            }
+        }
+
+        if (noteToDestroy != null)
+        {
+            onCorrectNote?.Invoke();
+            notes.RemoveAt(indexToRemove);
+            Destroy(noteToDestroy);
         }
         else
         {
             onFailNote?.Invoke();
         }
-        onButtonPressed?.Invoke();
-        while (notes.Count > 0)
-        {
-            GameObject note = notes[0];
-            notes.RemoveAt(0);
-            Destroy(note);
-        }
-        notes.Clear();
     }
-        
-    
-
-
-
 
 }
 
-   

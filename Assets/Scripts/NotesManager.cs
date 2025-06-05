@@ -113,7 +113,7 @@ public class NotesManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_finishTime);
         _onFinishSong?.Invoke();
-        if (_correctNotesCount >= _currentNoteChart.notes.Count * 0.7f)
+        if (_correctNotesCount >= _currentNotesCount * 0.7f)
         {
             _onWinSong?.Invoke(_correctNotesCount + " / " + _currentNotesCount);
         }
