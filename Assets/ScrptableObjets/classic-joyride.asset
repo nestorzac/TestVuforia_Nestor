@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86407210c3aa66f4383043f6a9af731c, type: 3}
   m_Name: classic-joyride
   m_EditorClassIdentifier: 
-  musicName: classic-joryride
+  musicName: classic-joyride
   animationName: Jet_Dance
   notesConfig: {fileID: 4900000, guid: 1e1e7179ab6cd40418ea7e3ece2d7765, type: 3}
   speed: 200
